@@ -1,0 +1,83 @@
+.employee-manager {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .add-department, .move-user-form {
+    margin-bottom: 20px;
+  }
+  
+  .add-department input, .move-user-form select {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-department button, .move-user-form button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .add-department button:hover, .move-user-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .existing-departments {
+    margin-bottom: 20px;
+  }
+  
+  .existing-departments ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .existing-departments li {
+    margin-bottom: 5px;
+  }
+  
+  .move-user ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .move-user li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .move-user button {
+    margin-left: 10px;
+  }
+  
+  .move-user button:first-child {
+    margin-right: 10px;
+  }
+  
+  .move-user button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .move-user button:hover {
+    background-color: #c82333;
+  }
+  
+  .move-user button:last-child {
+    background-color: #6c757d;
+  }
+  
+  .move-user button:last-child:hover {
+    background-color: #5a6268;
+  }
+  

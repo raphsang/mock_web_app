@@ -1,0 +1,91 @@
+/* ConductPage.css */
+
+/* General styles */
+.services-page {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107;
+  }
+  
+  .active {
+    color: #ffc107;
+  }
+  
+  /* Main content styles */
+  .services {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .service {
+    margin-bottom: 20px;
+  }
+  
+  .service h3 {
+    color: #007bff;
+  }
+  
+  .service h4 {
+    color: #28a745;
+    margin-top: 0;
+  }
+  
+  .service p {
+    margin-top: 5px;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  

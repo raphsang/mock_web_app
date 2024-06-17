@@ -1,0 +1,52 @@
+/* General container styling */
+.services-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section styling */
+  .services {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service h3 {
+    color: #04AA6D;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    color: #555;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .services {
+      padding: 20px;
+    }
+  
+    .service {
+      padding: 15px;
+    }
+  }
+  
