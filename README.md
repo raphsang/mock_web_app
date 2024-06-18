@@ -72,4 +72,9 @@ On windows On PowerShell:
 
 ### `npm run build` fails to minify
 
+To login as Manager
+### username `manager` password `accepts any password`
+To login as employee
+### username `employee` password `accepts any password`
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
