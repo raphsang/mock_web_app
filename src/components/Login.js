@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import './login.css'; // Import CSS file for styling
-
+ {/* creating the login page */}
 const Login = () => {
   const { login } = useContext(AuthContext);
   const [username, setUsername] = useState('');
@@ -17,7 +17,8 @@ const Login = () => {
       alert('Username and password are required.');
       return;
     }
-
+ {/* here users can login as manager and employee */}
+     {/* input any passowrd to login as manager or employee */}
     const userData = {
       id: 1,
       username,
