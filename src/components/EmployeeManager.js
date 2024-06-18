@@ -11,7 +11,7 @@ const EmployeeManager = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('');
 
   useEffect(() => {
-    {/* Main content styles */}
+    {/* fetching online data from api */}
     const fetchData = async () => { 
       const storedUsers = JSON.parse(localStorage.getItem('users'));
       const storedDepartments = JSON.parse(localStorage.getItem('departments'));
@@ -29,7 +29,7 @@ const EmployeeManager = () => {
 
     fetchData();
   }, []);
-
+ {/* saving api data to local storge to allow persistence on reload */}
   const saveUsersToLocalStorage = (users) => {
     localStorage.setItem('users', JSON.stringify(users));
   };
@@ -37,7 +37,7 @@ const EmployeeManager = () => {
   const saveDepartmentsToLocalStorage = (departments) => {
     localStorage.setItem('departments', JSON.stringify(departments));
   };
-
+ {/*function to create new deparments */}
   const handleAddDepartment = () => {
     if (newDepartment && !departments.includes(newDepartment)) {
       const updatedDepartments = [...departments, newDepartment];
@@ -46,7 +46,7 @@ const EmployeeManager = () => {
       setNewDepartment('');
     }
   };
-
+ {/* function to move users and update users*/}
   const handleMoveUser = async (userId, department) => {
     const updatedUsers = users.map(user => user.id === userId ? { ...user, department } : user);
     setUsers(updatedUsers);
@@ -83,7 +83,7 @@ const EmployeeManager = () => {
           ))}
         </ul>
       </div>
-
+ {/* function for moving users to different departments */}
       <div className="move-user">
         <h3>Move User to Department</h3>
         <ul>
