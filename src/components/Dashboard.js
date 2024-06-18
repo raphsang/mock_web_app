@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import TaskManager from './TaskManager';
 import EmployeeManager from './EmployeeManager';
 import './dashboard.css';
-// dashboard where users can sign and long into the system
+
 const Dashboard = () => {
   const { user, logout } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Dashboard = () => {
       <div className="main-content">
         {user && (
           <div>
-    // assign roles to manager
+    {/* assinging roles to both manager and employee */}
             {user.role === 'manager' && (
               <>
                 <EmployeeManager />
@@ -37,7 +37,7 @@ const Dashboard = () => {
           </div>
         )}
       </div>
-        //creating the footer element
+{/*creating the footer section */}
       <div className="footer">
         <div className="footer-content">
           <p>&copy; 2024 Freelance Site. All rights reserved.</p>
