@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import apiClient from '../api/Client';
 import './EmployeeManager.css'; // Import the CSS file
 
+{/* fuction to give manager certain privilages such as creating departments and tasks */}
 const EmployeeManager = () => {
   const [users, setUsers] = useState([]);
   const [departments, setDepartments] = useState(['Sales', 'Engineering', 'HR']);
@@ -10,7 +11,8 @@ const EmployeeManager = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
+    {/* Main content styles */}
+    const fetchData = async () => { 
       const storedUsers = JSON.parse(localStorage.getItem('users'));
       const storedDepartments = JSON.parse(localStorage.getItem('departments'));
 
